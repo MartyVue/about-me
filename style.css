@@ -105,20 +105,27 @@ p {
   .img-fluid {
     display: none;
   }
+
   .subheading {
     text-align: center;
   }
+
   p {
     text-align: center;
-    /* padding: 20px 0px; */
   }
+
   .mb-5 {
     text-align: center;
-    margin-left: 13px;
+    margin-left: 15px;
   }
-  /* .row {
-    margin-left: 20px;
-  } */
+
+  .weather {
+    margin-left: 25px;
+  }
+
+  .weathersubhead {
+    margin-left: 5px;
+  }
 }
 
 .email-link {
