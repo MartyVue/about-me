@@ -31,7 +31,7 @@ h3 {
 h1,
 h2,
 h3 {
-  text-align: center;
+  margin: 0;
 }
 
 .navigation-links a {
@@ -75,7 +75,7 @@ h3 {
 p {
   font-size: 18px;
   line-height: 1.5;
-  padding: 15px;
+  padding: 15px 15px;
   border-radius: 4px;
 }
 
@@ -94,24 +94,31 @@ p {
 .img-fluid {
   max-width: 100%;
   height: auto;
-  /* max-height: 356px;
-  min-width: 356px; */
+}
+
+.img-about {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (max-width: 576px) {
   .img-fluid {
     display: none;
   }
-}
-
-@media (max-width: 576px) {
-  h2 {
+  .subheading {
     text-align: center;
   }
   p {
     text-align: center;
-    color: #6c63ff;
+    /* padding: 20px 0px; */
   }
+  .mb-5 {
+    text-align: center;
+    margin-left: 13px;
+  }
+  /* .row {
+    margin-left: 20px;
+  } */
 }
 
 .email-link {
@@ -131,18 +138,17 @@ p {
   border-radius: 4px;
 }
 
-.paragraph-detail {
+/* .paragraph-detail {
   text-align: left;
-}
+} */
 
 .subheading {
   font-weight: 500;
   font-size: 48px;
   line-height: 1.2;
   padding-bottom: 5px;
-  text-align: left;
 }
 
-.mb-5 {
+/* .mb-5 {
   text-align: left;
-}
+} */
