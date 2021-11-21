@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oatmeal</title>
+    <style>
+      body {
+        background: white;
+      }
+      h1 {
+        color: #b4917b;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: 3px solid black;
+        border-radius: 0px;
+        padding: 20px;
+        font-size: 40px;
+        font-weight: normal;
+        text-align: center;
+      }
+      h2 {
+        color: black;
+        font-weight: 500;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      ul {
+        padding: 20px;
+      }
+      img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 0.7;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: white;
+        color: rgb(138, 77, 28);
+        font-size: 12px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 2px 2px 5px rgba(248, 71, 80, 0.3);
+        transition: all 100ms ease-in-out;
+      }
+
+      button:hover {
+        color: cadetblue;
+        cursor: pointer;
+        font-size: 12px;
+      }
+
+      .Oatmeal {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .link {
+        color: #b4917b;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+        font-size: 12px;
+        color: cadetblue;
+      }
+      .ending {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Oatmeal">
+      <h1>A Morning with Oatmeal</h1>
+      <h2>What is Oatmeal?</h2>
+      <ul>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/006/927/original/Instant-Pot-Oatmeal-foodiecrush.com-020-683x1024-1-500x500.jpg?1618074955"
+        />
+        <p>
+          <strong>Oatmeal</strong> is a type of coarse flour made of hulled oat
+          grains that have either been milled or steel-cut. Ground oats are also
+          called "white oats". Steel-cut oats are known as "coarse oatmeal",
+          "Irish oatmeal" or "pinhead oats".
+        </p>
+        <a
+          href="https://en.wikipedia.org/wiki/Oatmeal"
+          target="_blank"
+          class="link"
+        >
+          Learn more on Wikipedia
+        </a>
+      </ul>
+      <button class="recipes-button">Favorite Oatmeal Recipes!</button>
+      <ul>
+        <p class="ending">This page was built by <strong>Martha Vue</strong></p>
+      </ul>
+    </div>
+    <script>
+      function recipes() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let topping = prompt("What is your favorite oatmeal topping?");
+
+        alert(
+          "Thank you, " +
+            name +
+            "! We will be in touch soon. In the mean time get creative with your " +
+            topping +
+            " oatmeal!"
+        );
+      }
+
+      let recipesButton = document.querySelector(".recipes-button");
+      recipesButton.addEventListener("click", recipes);
+    </script>
+  </body>
+</html>
